@@ -4,10 +4,10 @@
             
             <form class="grid" action="/result" method="POST">
 
-                {% if name %}
+
 
                   <center>
-                    <h3 style="color: blue;" class="let_space">{{name}} {{a}}</h3>
+                    <h3 style="color: blue;" class="let_space"> {{a}}</h3>
                     {% if a == '맑음' %}
                       <iframe width="560" height="500" src="https://wmprogram.netlify.app/taste_settings_sunny.html"  frameborder="0">이 브라우저는 iframe을 지원하지 않습니다</iframe></p>
 
@@ -22,13 +22,7 @@
                     
                     {% endif %}
                   </center>
-      
-                {% endif %}
-                 
-                <label for="name">Enter your area:</label>
-                <input type="text" id="area" name="name" >
-      
-                <center><input class="file_submit" type="Submit"></center>
+
       
             </form>
         </body>
