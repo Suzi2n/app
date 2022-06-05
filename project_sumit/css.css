@@ -1,0 +1,273 @@
+.button {
+	width:400px;
+	height: 150px;
+	pointer-events: auto;
+	cursor: pointer;
+	background: #e7e7e7;
+	border: none;
+	padding: 1.5rem 3rem;
+	margin: 0;
+	font-family: 'EliceDigitalBaeum_Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EliceDigitalBaeum_Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+	position: relative;
+	display: inline-block;
+	margin:auto;
+  	display:block;
+	
+}
+
+
+.button::before,
+.button::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	
+}
+
+
+.button--pan {
+	font-family: 'EliceDigitalBaeum_Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EliceDigitalBaeum_Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+	border: 3px solid #000;
+	border-radius: rem;
+	overflow: hidden;
+	color: #fff;
+}
+
+.button--pan span {
+	position: relative;
+	mix-blend-mode: difference;
+}
+
+.button--pan::before {
+	content: '';
+	background: #000;
+	transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.button--mimas {
+	text-transform: uppercase;
+	letter-spacing: 0.05rem;
+	font-weight: 400;
+	font-size: 2rem;
+	border-radius: 5rem;
+	overflow: hidden;
+	color: #fff;
+	background: #e7e7e7;
+	
+	
+
+}
+
+.button--mimas span {
+	position: relative;
+	mix-blend-mode: difference;
+}
+
+.button--mimas::before {
+	content: '';
+	background: #000;
+	width: 200%;
+	left: -20%;
+	transform: skew(30deg);
+	transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.button--mimas:hover::before {
+	transform: translate3d(100%,0,0);
+}
+
+
+
+.button2{
+	pointer-events: auto;
+	cursor: pointer;
+	background: #e7e7e7;
+	border: none;
+	padding: 1.5rem 3rem;
+	margin: 0;
+	font-family: inherit;
+	font-size: inherit;
+	position: absolute;
+	display: inline-block;
+	margin:auto;
+ 	display:block;
+	
+}
+
+
+.button2::before,
+.button2::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	
+}
+
+.button2--pan {
+	font-family: 'EliceDigitalBaeum_Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EliceDigitalBaeum_Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+	border: 3px solid #000;
+	border-radius: 3rem;
+	overflow: hidden;
+	color: #fff;
+}
+
+.button2--pan span {
+	position: relative;
+	mix-blend-mode: difference;
+}
+
+.button2--pan::before {
+	content: '';
+	background: #000;
+	transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.button2--mimas {
+	text-transform: uppercase;
+	letter-spacing: 0.05rem;
+	font-weight: 400;
+	font-size: 2rem;
+	border-radius: 5rem;
+	overflow: hidden;
+	color: #fff;
+	background: #e7e7e7;
+
+}
+
+.button2--mimas span {
+	position: relative;
+	mix-blend-mode: difference;
+}
+
+.button2--mimas::before {
+	content: '';
+	background: #000;
+	width: 200%;
+	left: -20%;
+	transform: skew(30deg);
+	transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.button2--mimas:hover::before {
+	transform: translate3d(100%,0,0);
+}
+
+
+
+.layout {
+
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid:
+      "sidebar body" 100%
+      / 10% 90%;
+    gap: 0;
+  }
+  
+  .sidebar { 
+      grid-area: sidebar;
+      background-color: #4C4C4C ;
+	  margin: 0;
+    }
+
+	.body { 
+	
+		grid-area: body;
+		background-color: #F6F6F6;
+		  
+	  }
+img.relative{
+	position: relative;
+	left : 20px;
+	top : 7px;
+
+}
+@font-face {
+	
+	font-family: 'EliceDigitalBaeum_Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EliceDigitalBaeum_Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;;
+	
+}
+ * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    }
+
+    .buttons {
+        margin: 15px;
+        text-align: left;
+
+    }
+
+    .btn-hover {
+
+        width: 800px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        padding: 15px;
+        text-align:left;
+        border: none;
+        background-size: 500% 100%;
+        border-radius: 30px;
+        moz-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+        cursor:default;
+        font-family: 'EliceDigitalBaeum_Regular';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EliceDigitalBaeum_Regular.woff2') format('woff2');
+    }
+
+    .title{
+        margin-top: 15%;
+        font-size: 20px;
+        font-weight: 600;
+        color: #000;
+        padding: 15px;
+        text-align:center;
+        border: none;
+        margin-bottom: 3%;
+        cursor:default;
+        font-family: 'EliceDigitalBaeum_Regular';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EliceDigitalBaeum_Regular.woff2') format('woff2');
+    }
+
+    .btn-hover:hover {
+        background-position: 100% 0;
+        moz-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+        color: #000;
+    }
+
+    .btn-hover:focus {
+        outline: none;
+    }
+
+    .btn-hover.color-1 {
+        margin-bottom: 12px;
+        position:relative;
+        left:27%;
+        top:1%;
+        background-image: linear-gradient(to right, #000, #000, #e7e7e7, #fff);
+
+    }

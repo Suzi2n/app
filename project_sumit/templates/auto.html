@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang = "ko">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    </head>
+        <body>
+        
+            <div class="body" style="text-align: center;">
+                <style>
+                    body{
+                      margin: 0;
+                    }
+                </style>
+              
+                <form class="grid" action="/result" method="POST">
+
+                  <center>
+                    <h3 style="color: #000;" class="let_space"> {{a}}</h3>
+                    {% if a == '맑음' %}
+                      <iframe width=1000px height= 100% src="https://wmprogram4.netlify.app/taste_settings_sunny.html"  frameborder="0">이 브라우저는 iframe을 지원하지 않습니다</iframe></p>
+
+                    {% elif a == '흐림' %}
+                      <a href="https://wmprogram4.netlify.app/taste_settings_blur.html" target="_self" ></a>
+                      
+            
+                    {% elif a == '비' %}
+                      <iframe width="1000px" height="1000px" src="https://wmprogram4.netlify.app/taste_settings_rainy.html"  frameborder="0">이 브라우저는 iframe을 지원하지 않습니다</iframe></p>
+                    
+                    {% elif a == '눈' %}
+                      <iframe width="1000px" height="1000px" src="https://wmprogram4.netlify.app/taste_settings_snow.html"  frameborder="0">이 브라우저는 iframe을 지원하지 않습니다</iframe></p>
+    
+                    {% endif %}
+                  </center>
+
+                   
+                        </form>
+                    </ol>
+              </div>
+          </section>
+        </body>
+</html>
+
+
+

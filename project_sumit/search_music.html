@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/Javascript">
+        function searchMusic(){
+            // window.location.href="https://www.youtube.com/results?search_query=";
+            keyword=document.getElementById('tBox').value;
+            url='https://www.youtube.com/results?search_query='+keyword;
+            window.location.href=url;
+            //window.location.href='https://www.youtube.com/results?search_query='+document.getElementById('tBox');
+        }
+    </script>
+</head>
+<body>
+    <section class="layout">
+        <div class="sidebar">
+            <img src ="WEMU.png" class = "relative">
+        </div>
+        <div class="body" style="text-align: center;">
+            <style>
+                body{
+                    margin: 0;
+                }
+            </style>
+            <p style="margin: 100px 20px 0px 0px; font-size: 42pt; font-family: 'EliceDigitalBaeum_Regular';">음악 검색</p><br>
+            <input type="text" id="tBox" style="width:300px;height:60px;font-size:24px; border-radius: 15px;">
+            <input type="button" value="검색" style="width:100px;height:65px;font-size:24px; margin: 80px 0px 0px 0px; font-family: 'EliceDigitalBaeum_Regular'; border-radius: 15px;" onclick="searchMusic();">
+            </p>
+        </div>
+    </section>
+</body>
+</html>
